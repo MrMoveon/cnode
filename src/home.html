@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet"/>
+    	<link href="css/app.min.css" rel="stylesheet"/>
+	</head>
+
+	<body class="cnode-theme-blue">
+		<div class="mui-content" id="app">
+	        <div class="cnode-home-tab">
+	        	<div class="item" v-for="(item,index) in topTab" @click="itemHandle(index)" :class="{'mui-active':currentTab===index}" :key="index">
+	        		{{item.text}}
+	        	</div>
+	        </div>
+	        <div class="cnode-home-list">
+	        	<div class="cnode-card">
+	        		
+	        	</div>
+	        </div>
+	    </div>
+		<script src="js/mui.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script type="text/javascript" charset="utf-8">
+       
+			
+       	var vm=new Vue({
+       		el:'#app',
+       		data:function(){
+       			return{
+       				currentTab:0,
+       				topTab:[
+       					{
+       						text:'全部',
+       						value:''
+       					},
+       					{
+       						text:'精华',
+       						value:'good'
+       					},
+       					{
+       						text:'分享',
+       						value:'share'
+       					},
+       					{
+       						text:'问答',
+       						value:'ask'
+       					},
+       					{
+       						text:'招聘',
+       						value:'job'
+       					},
+       				]
+       			}
+       		},
+       		mounted:function(){
+       			 mui.init();
+       		},
+       		methods:{
+       			itemHandle:function(index){
+       				this.currentTab=index
+       			}
+       		}
+       	})
+  </script>
+	</body>
+
+</html>

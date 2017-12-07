@@ -1,0 +1,59 @@
+{
+  "src/home.html": {
+    "href": "src/home.html",
+    "resources": [
+      "src/css/mui.min.css",
+      "src/css/app.min.css",
+      "src/js/mui.min.js",
+      "src/js/vue.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "src/message.html": {
+    "href": "src/message.html",
+    "resources": [
+      "src/css/mui.min.css",
+      "src/css/app.min.css",
+      "src/js/mui.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "src/me.html": {
+    "href": "src/me.html",
+    "resources": [
+      "src/css/mui.min.css",
+      "src/css/app.min.css",
+      "src/js/mui.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "src/rank.html": {
+    "href": "src/rank.html",
+    "resources": [
+      "src/css/mui.min.css",
+      "src/css/app.min.css",
+      "src/js/mui.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "src/main.html": {
+    "href": "src/main.html",
+    "resources": [
+      "src/css/mui.min.css",
+      "src/css/app.min.css",
+      "src/js/mui.min.js",
+      "src/js/vue.js"
+    ],
+    "refer": [
+      "src/home.html",
+      "src/message.html",
+      "src/me.html",
+      "src/rank.html"
+    ],
+    "priority": 0
+  }
+}

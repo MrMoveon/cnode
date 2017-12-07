@@ -1,0 +1,41 @@
+{
+  "name": "vue-requirejs-mui-project",
+  "version": "1.0.0",
+  "description": "vue+requirejs+mui",
+  "main": "app.build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp server:dev",
+    "build": "node r.js -o app.build.js",
+    "css": "gulp css:min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/mf/vue-requirejs-mui-project.git"
+  },
+  "keywords": [
+    "require",
+    "vue"
+  ],
+  "author": "afei",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-base64": "^0.1.3",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-spriter": "^0.4.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-less": "^3.3.2",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.11",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-short": "^4.1.0"
+  }
+}
